@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+:root {
+  --main-bg-color: hsl(0, 0%, 98%);
+  --text-primary: hsl(200, 15%, 8%);
+  --elements: hsl(0, 0%, 100%);
+  --input: hsl(0, 0%, 52%);
+  --font: 'Nunito Sans', sans-serif;
+  --font-size: 14px;
+  --font-weight-light: 300;
+  --font-weight-medium: 600;
+  --font-weight-heavy: 800;
+  --navbar-box-shadow: 0 1px 1px black;
+  --card-box-shadow: 0 1px 7px -1px lightgrey;
+  --button-box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 5px;
+  ;
+
+
+}
+
+[data-theme='dark'] {
+  --main-bg-color: hsl(207, 26%, 17%);
+  --text-primary: hsl(0, 0%, 100%);
+  --elements: hsl(209, 23%, 22%);
+  --input: hsl(0, 0%, 52%);
+  --card-box-shadow: none;
+  --navbar-box-shadow: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+header,
+main {
+  width: 100%;
+  background-color: var(--main-bg-color);
+}

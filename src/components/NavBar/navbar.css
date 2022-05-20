@@ -1,0 +1,32 @@
+.navbar-div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 0;
+    background-color: var(--elements);
+    font-family: var(--font);
+    color: var(--text-primary);
+    font-size: 14px;
+    font-weight: var(--font-weight-heavy);
+    box-shadow: var(--navbar-box-shadow);
+}
+
+.navbar-div>p {
+    margin-left: 25px;
+}
+
+.navbar-div-image {
+    display: flex;
+    margin-right: 20px;
+}
+
+.navbar-div-image p {
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: var(--font-weight-medium);
+}
+
+.navbar-div img {
+    width: 16px;
+    height: 16px;
+}

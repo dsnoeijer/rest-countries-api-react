@@ -1,0 +1,30 @@
+.select,
+.options {
+    margin: 18px 0 0 17px;
+    width: 170px;
+    padding: 16px 0 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--elements);
+    box-shadow: var(--card-box-shadow);
+    color: var(--text-primary);
+    text-align: left;
+    font-family: var(--font);
+    font-size: 12px;
+    font-weight: var(--font-weight-medium);
+}
+
+.options {
+    display: none;
+    position: absolute;
+    margin-top: 4px;
+}
+
+.options p {
+    line-height: 17px;
+    padding: 3px 0;
+}
+
+.block {
+    display: block;
+}

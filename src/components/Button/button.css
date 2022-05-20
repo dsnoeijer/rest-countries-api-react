@@ -1,0 +1,11 @@
+.backButton {
+    margin: 41px 0 40px 30px;
+    padding: 6px 20px;
+    width: 60px;
+    box-shadow: var(--button-box-shadow);
+    color: var(--text-primary);
+    font-family: var(--font);
+    font-size: 14px;
+    font-weight: var(--font-weight-medium);
+    background-color: var(--elements);
+}
