@@ -1,6 +1,13 @@
+.buttonWrap {
+    padding: 40px 0 0;
+}
+
+
 .backButton {
-    margin: 41px 0 40px 30px;
-    padding: 6px 20px;
+    display: flex;
+    align-items: center;
+    margin: 0 0 40px 30px;
+    padding: 6px 0px 6px 40px;
     width: 60px;
     box-shadow: var(--button-box-shadow);
     color: var(--text-primary);
@@ -8,4 +15,15 @@
     font-size: 14px;
     font-weight: var(--font-weight-medium);
     background-color: var(--elements);
+}
+
+.backButton p {
+    margin-left: 10px;
+}
+
+.backButton img {
+    position: absolute;
+    left: 50px;
+    width: 16px;
+    height: auto;
 }

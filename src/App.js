@@ -6,6 +6,7 @@ import Filter from './components/Filter/Filter';
 import Card from './components/Card/Card';
 import Button from './components/Button/Button';
 import Detail from './components/Detail/Detail';
+import './app.css';
 
 
 const App = () => {
