@@ -50,13 +50,13 @@ const Detail = () => {
         <div className="detail">
             <div className="detail-flag">
                 <div className="detail-wrap">
-                    <img src={country.flags.png} alt={country.name.common} />
+                    <img src={country.flags.png ? country.flags.png : ""} alt={country.name.common ? country.name.common : 'N/A'} />
                 </div>
             </div>
             <div className="detail-info">
                 <div className="detail-wrap">
                     <div className='detail-top-div'>
-                        <h1>{country.name.common}</h1>
+                        <h1>{country.name.common ? country.name.common : 'N/A'}</h1>
                         <p>
                             Native Name: <span className="detail-result"> {country.name.nativeName ? Object.values(country.name.nativeName)[0].official : 'N/A'} </span>
                         </p>
