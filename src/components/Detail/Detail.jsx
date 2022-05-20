@@ -50,7 +50,7 @@ const Detail = () => {
         <div className="detail">
             <div className="detail-flag">
                 <div className="detail-wrap">
-                    <img src={country.flags.png ? country.flags.png : ""} alt={country.name.common ? country.name.common : 'N/A'} />
+                    <img src={country.flags.png ? country.flags.png : ""} alt={country.name.common ? country.name.common : 'No image available'} />
                 </div>
             </div>
             <div className="detail-info">
