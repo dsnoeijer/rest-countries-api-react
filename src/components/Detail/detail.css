@@ -63,7 +63,8 @@
 
 .borders button {
     font-family: var(--font);
-    background-color: #fff;
+    color: var(--text-primary);
+    background-color: var(--elements);
     border: none;
     padding: 5px 0;
     width: 90px;
