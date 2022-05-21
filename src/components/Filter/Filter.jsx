@@ -13,27 +13,40 @@ const Filter = () => {
     const apiFilterUrl = 'https://restcountries.com/v3.1/region/';
 
     const selectRegion = async (region) => {
-        const selectedRegion = await fetch(`${apiFilterUrl}${region}`);
-        const result = await selectedRegion.json();
-        dispatch({
-            type: 'SET_COUNTRIES',
-            payload: result
-        })
+        if (region !== 'All') {
+            const selectedRegion = await fetch(`${apiFilterUrl}${region}`);
+            const result = await selectedRegion.json();
+            dispatch({
+                type: 'SET_COUNTRIES',
+                payload: result
+            })
+        } else {
+            const selectedRegion = await (fetch('https://restcountries.com/v3.1/all'));
+            const result = await selectedRegion.json();
+            dispatch({
+                type: 'SET_COUNTRIES',
+                payload: result
+            })
+        }
+
     }
 
     return (
 
         <div className="selectFilter">
-            <div className="select" onClick={showOptions}>
-                <p>Filter by Region</p>
-            </div>
+            <div className="selectWrap" onClick={showOptions}>
+                <div className="select" onMouseEnter={showOptions} onMouseLeave={showOptions} onClick={showOptions}>
+                    <p>Filter by Region</p>
 
-            <div className="options">
-                <p onClick={() => selectRegion('Africa')}>Africa</p>
-                <p onClick={() => selectRegion('America')}>America</p>
-                <p onClick={() => selectRegion('Asia')}>Asia</p>
-                <p onClick={() => selectRegion('Europe')}>Europe</p>
-                <p onClick={() => selectRegion('Oceania')}>Oceania</p>
+                    <div className="options">
+                        <p onClick={() => selectRegion('All')}>All</p>
+                        <p onClick={() => selectRegion('Africa')}>Africa</p>
+                        <p onClick={() => selectRegion('America')}>America</p>
+                        <p onClick={() => selectRegion('Asia')}>Asia</p>
+                        <p onClick={() => selectRegion('Europe')}>Europe</p>
+                        <p onClick={() => selectRegion('Oceania')}>Oceania</p>
+                    </div>
+                </div>
             </div>
         </div>
 

@@ -1,20 +1,16 @@
 .searchbar-div {
     width: 100%;
-    padding: 24px 0;
+    padding: 24px 0 21px;
 }
 
 .searchbar {
-    /* padding: 24px 0; */
     margin: auto;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 .searchbar input {
     background-color: var(--elements);
     color: var(--text-primary);
-    padding: 16px 90px;
+    padding: 15px 90px;
     border: none;
     border-radius: 5px;
     box-shadow: var(--card-box-shadow);
@@ -30,4 +26,22 @@
     position: relative;
     width: 16px;
     height: auto;
+}
+
+@media screen and (min-width: 600px) {
+    .searchbar-div {
+        margin-left: 55px;
+        padding: 46px 0 48px;
+    }
+
+    .searchbar input {
+        padding: 21px 240px 21px 70px;
+    }
+
+    .searchbar input::placeholder {
+        font-size: 13px;
+        color: var(--text-primary);
+        opacity: .6;
+    }
+
 }

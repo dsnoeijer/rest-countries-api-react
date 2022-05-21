@@ -1,11 +1,10 @@
 .countries {
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 34px 0;
-    background-color: none;
+    margin: 23px 0 34px;
     color: var(--text-primary);
     background-color: var(--main-bg-color);
 }
@@ -42,4 +41,36 @@
 
 .card-info-detail {
     font-weight: var(--font-weight-light);
+}
+
+@media screen and (min-width: 600px) {
+    .countries {
+        width: 90vw;
+        margin: 0 auto;
+        flex-direction: row;
+        gap: 5%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .countries-card {
+        width: 20%;
+        border-radius: 8px;
+        box-shadow: var(--card-box-shadow);
+        margin-bottom: 40px;
+    }
+
+    .countries-card-info {
+        min-height: 150px;
+        padding: 0 25px 40px;
+        background-color: var(--elements);
+        font-family: var(--font);
+        font-weight: var(--font-weight-heavy);
+        font-size: 10px;
+    }
+
+    .countries-card-info h1 {
+        font-size: 18px;
+        padding: 19px 0 12px;
+    }
 }
