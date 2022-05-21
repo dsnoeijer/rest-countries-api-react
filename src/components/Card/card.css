@@ -7,6 +7,7 @@
     margin: 34px 0;
     background-color: none;
     color: var(--text-primary);
+    background-color: var(--main-bg-color);
 }
 
 .countries-card {
