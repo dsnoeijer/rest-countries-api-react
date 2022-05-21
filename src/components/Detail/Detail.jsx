@@ -54,7 +54,7 @@ const Detail = () => {
     return (
         <div className="detail">
             <div className="detail-flag">
-                <div className="detail-wrap">
+                <div className="detail-wrap-flag">
                     <img src={country.flags.png ? country.flags.png : ""} alt={country.name.common ? country.name.common : 'No image available'} />
                 </div>
             </div>
@@ -62,7 +62,7 @@ const Detail = () => {
                 <div className="detail-wrap">
                     <div className='detail-top-div'>
                         <h1>{country.name.common ? country.name.common : 'N/A'}</h1>
-                        <p>
+                        <p className="native">
                             Native Name: <span className="detail-result"> {country.name.nativeName ? Object.values(country.name.nativeName)[0].official : 'N/A'} </span>
                         </p>
                         <p>

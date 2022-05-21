@@ -45,7 +45,7 @@
 
 @media screen and (min-width: 600px) {
     .countries {
-        width: 90vw;
+        width: 89vw;
         margin: 0 auto;
         flex-direction: row;
         gap: 5%;

@@ -7,7 +7,8 @@
     color: var(--text-primary);
 }
 
-.detail-wrap {
+.detail-wrap,
+.detail-wrap-flag {
     width: 325px;
     margin: auto;
 }
@@ -74,4 +75,70 @@
 
 .borders button:not(:last-child) {
     margin-right: 10px;
+}
+
+@media screen and (min-width: 600px) {
+    .detail {
+        padding: 45px 0 0 5px;
+        background-color: var(--main-bg-color);
+        width: 89vw;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .detail-wrap-flag {
+        width: 560px;
+    }
+
+    .detail-wrap {
+        display: flex;
+        width: 600px;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .detail-flag {
+        width: 560px;
+        padding: 0;
+    }
+
+    .detail-flag img {
+        height: 400px;
+        width: 560px;
+    }
+
+    .detail-top-div h1 {
+        font-size: 32px;
+        padding-bottom: 24px;
+        font-weight: var(--font-weight-heavy);
+    }
+
+    .detail-top-div p,
+    .detail-middle-div p {
+        font-size: 16px;
+        font-weight: var(--font-weight-heavy);
+        line-height: 32px;
+    }
+
+    .detail-middle-div {
+        padding: 80px 0 0 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .detail-bottom-div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .detail-bottom-div h2 {
+        margin-right: 15px;
+        font-weight: var(--font-weight-heavy);
+    }
+
+    .borders button {
+        margin: 0;
+    }
 }

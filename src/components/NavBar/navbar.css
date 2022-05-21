@@ -1,3 +1,12 @@
+header {
+    background-color: var(--main-bg-color);
+    padding-bottom: 5px;
+}
+
+.home {
+    background-color: var(--main-bg-color);
+}
+
 .navbar-div {
     display: flex;
     justify-content: space-between;
@@ -9,6 +18,7 @@
     font-size: 14px;
     font-weight: var(--font-weight-heavy);
     box-shadow: var(--navbar-box-shadow);
+
 }
 
 .navbar-div>p {
@@ -29,4 +39,39 @@
 .navbar-div img {
     width: 16px;
     height: 16px;
+}
+
+@media screen and (min-width: 600px) {
+
+    header {
+        box-shadow: var(--navbar-box-shadow);
+        padding-bottom: 1px;
+    }
+
+    .navbar-div {
+        width: 100%;
+        padding: 25px 40px;
+        font-family: var(--font);
+        font-size: 24px;
+        font-weight: var(--font-weight-heavy);
+    }
+
+    .navbar-div>p {
+        margin-left: 42px;
+    }
+
+    .navbar-div-image {
+        margin-right: 123px;
+    }
+
+    .navbar-div-image p {
+        margin-left: 10px;
+        font-size: 16px;
+        font-weight: var(--font-weight-medium);
+    }
+
+    .navbar-div img {
+        width: 18px;
+        height: 18px;
+    }
 }
