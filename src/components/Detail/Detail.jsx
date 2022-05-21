@@ -1,10 +1,15 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { Context } from '../../components/Store/Store';
 import CountryButton from '../CountryButton/CountryButton';
 import './detail.css';
 
 
 const Detail = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     // eslint-disable-next-line
     const [state, dispatch] = useContext(Context);
     const country = state.country;
