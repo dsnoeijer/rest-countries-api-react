@@ -1,15 +1,4 @@
-.detail-page {
-    height: auto;
-}
-
-body::-webkit-scrollbar {
-    width: 0px;
-    display: none;
-}
-
-body {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
+main {
+    width: 100vw;
+    height: 100%;
 }

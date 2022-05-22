@@ -13,9 +13,6 @@
   --navbar-box-shadow: 0 1px 1px lightgrey;
   --card-box-shadow: 0 1px 7px -1px lightgrey;
   --button-box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 5px;
-  ;
-
-
 }
 
 [data-theme='dark'] {
@@ -33,8 +30,13 @@
 }
 
 html,
-body,
-main {
+body {
   width: 100vw;
+  height: 100vh;
   background-color: var(--main-bg-color);
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+  display: none;
 }

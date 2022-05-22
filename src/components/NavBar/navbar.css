@@ -1,16 +1,18 @@
 header {
     background-color: var(--main-bg-color);
     padding-bottom: 5px;
+    width: 100vw;
 }
 
-.home {
+.home,
+.detailPage {
     background-color: var(--main-bg-color);
+    min-height: calc(100vh - 83px);
 }
 
 .navbar-div {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     padding: 30px 0;
     background-color: var(--elements);
     font-family: var(--font);
@@ -46,10 +48,10 @@ header {
     header {
         box-shadow: var(--navbar-box-shadow);
         padding-bottom: 1px;
+        width: 100%;
     }
 
     .navbar-div {
-        width: 100%;
         padding: 25px 40px;
         font-family: var(--font);
         font-size: 24px;
@@ -61,7 +63,7 @@ header {
     }
 
     .navbar-div-image {
-        margin-right: 123px;
+        margin-right: 44px;
     }
 
     .navbar-div-image p {

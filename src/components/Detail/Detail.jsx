@@ -59,10 +59,10 @@ const Detail = () => {
                 </div>
             </div>
             <div className="detail-info">
+                <h1>{country.name.common ? country.name.common : 'N/A'}</h1>
                 <div className="detail-wrap">
                     <div className='detail-top-div'>
-                        <h1>{country.name.common ? country.name.common : 'N/A'}</h1>
-                        <p className="native">
+                        <p>
                             Native Name: <span className="detail-result"> {country.name.nativeName ? Object.values(country.name.nativeName)[0].official : 'N/A'} </span>
                         </p>
                         <p>
@@ -77,6 +77,7 @@ const Detail = () => {
                         <p>
                             Capital: <span className="detail-result">{country.capital ? country.capital : 'N/A'}</span>
                         </p>
+
                     </div>
                     <div className='detail-middle-div'>
                         <p>

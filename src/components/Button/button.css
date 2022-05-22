@@ -1,5 +1,6 @@
 .buttonWrap {
     padding: 40px 0 0;
+    background-color: var(--main-bg-color);
 }
 
 
@@ -30,8 +31,7 @@
 
 @media screen and (min-width: 600px) {
     .buttonWrap {
-        padding: 78px 0 0;
-        margin-left: 54px;
+        padding: 78px 0 1px 54px;
     }
 
     .backButton {
