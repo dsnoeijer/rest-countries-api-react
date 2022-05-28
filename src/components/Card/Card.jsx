@@ -17,7 +17,7 @@ const Card = (props) => {
 
     return (
         <div className='countries'>
-            {Object.keys(props.default).slice(0, 8).map((key) => {
+            {Object.keys(props.default).length > 0 ? Object.keys(props.default).map((key) => {
                 return (
                     <div className="countries-card" key={props.default[key].name.common} onClick={() => selectCountry(props.default[key])}>
                         <div className="countries-card-image">
@@ -37,7 +37,12 @@ const Card = (props) => {
                         </div>
                     </div>
                 )
-            })}
+            })
+                :
+                <div className="countries-card-info-no-result">
+                    <h2>Sorry, we couldn't find any countries that match your search criteria</h2>
+                </div>
+            }
         </div>
     )
 }
